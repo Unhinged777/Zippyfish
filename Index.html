@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Angeles County DPSS - Service Request</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="la-county-logo.png" alt="Los Angeles County Logo" width="150" />
+      <h1>Los Angeles County</h1>
+      <p>Department of Public Social Services</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Service Request</h2>
+      <p>Please complete the form below to request assistance.</p>
+      <form action="submit.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="caseNumber">Case Number:</label>
+        <input type="text" id="caseNumber" name="caseNumber" required />
+
+        <label for="ssn">Social Security Number:</label>
+        <input type="text" id="ssn" name="ssn" required />
+
+        <label for="reason">Why are you visiting this site?</label>
+        <select id="reason" name="reason" required>
+          <option value="">Select an option</option>
+          <option value="contactWorker">Contact worker</option>
+          <option value="securityIssue">Security issue</option>
+          <option value="lostCard">Lost card</option>
+          <option value="changePIN">Change PIN</option>
+          <option value="updateMailingAddress">Update mailing address</option>
+          <option value="checkTransactions">Check recent transactions</option>
+          <option value="freezeAccount">Freeze account</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Los Angeles County DPSS. All rights reserved.</p>
+    <p>Contact: info@dpss.lacounty.gov | Phone: (213) 223-4567</p>
+  </footer>
+</body>
+</html>
